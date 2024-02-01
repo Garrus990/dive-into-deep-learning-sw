@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dive-into-deep-learning"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "dive_into_deep_learning"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.13.1"
+torchvision = "^0.14.1"
+jupyterlab = "^3.5.2"
+pandas = "^1.5.2"
+numpy = "^1.24.1"
+matplotlib = "^3.6.3"
+plotnine = "^0.10.1"
+seaborn = "^0.12.2"
+d2l = "1.0.0-beta0"
+torchinfo = "^1.7.1"
+jax = {extras = ["cpu"], version = "^0.4.8"}
+
+
+[tool.poetry.group.code-quality.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
